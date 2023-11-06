@@ -1,0 +1,26 @@
+cabal-version:      3.4
+name:               cabal-buildinfo-example
+version:            0.1.0.0
+license:            GPL-3.0-only
+license-file:       LICENSE
+author:             Alexander Tomokhov
+maintainer:         alexoundos@gmail.com
+category:           Text
+build-type:         Configure
+
+library
+    exposed-modules:  MyLib
+    hs-source-dirs:   src
+    build-depends:
+        base ^>=4.16.4.0
+    ghc-options: -Wall
+    default-language: Haskell2010
+
+executable cabal-buildinfo-example
+    main-is:          Main.hs
+    build-depends:
+        base ^>=4.16.4.0,
+        cabal-buildinfo-example
+    hs-source-dirs:   app
+    ghc-options: -Wall
+    default-language: Haskell2010

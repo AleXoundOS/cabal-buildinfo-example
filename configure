@@ -1,0 +1,4 @@
+#! /usr/bin/env bash
+
+echo 'cpp-options: -DMYDEF="CPP_definition"' > cabal-buildinfo-example.buildinfo
+
