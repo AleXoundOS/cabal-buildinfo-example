@@ -42,4 +42,4 @@ src/MyLib.hs:6:14: error:
 Failed, no modules loaded.
 ```
 
-Currently, `cabal repl` fails to pick up the definition.
+Currently, `cabal repl` fails to pick up the definition. Remarkably, `nix build` doesn't work either. Whereas, `cabal build` inside `nix develop` succeeds!
